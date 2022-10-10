@@ -8,6 +8,15 @@ import { ChildBComponent } from './child-b/child-b.component';
 import { GrandChildComponent } from './grand-child/grand-child.component';
 import { ColorComponent } from './color/color.component';
 import {FormsModule} from "@angular/forms";
+import { CvComponent } from './cvTech/cv/cv.component';
+import { ListeComponent } from './cvTech/liste/liste.component';
+import { ItemComponent } from './cvTech/item/item.component';
+import { DetailComponent } from './cvTech/detail/detail.component';
+import { StyleComponent } from './directive/style/style.component';
+import { ClassComponent } from './directive/class/class.component';
+import { HighlightDirective } from './directive/highlight.directive';
+import { RainbowDirective } from './directive/rainbow.directive';
+import { DefaultImagePipe } from './cvTech/default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +24,16 @@ import {FormsModule} from "@angular/forms";
     ChildAComponent,
     ChildBComponent,
     GrandChildComponent,
-    ColorComponent
+    ColorComponent,
+    CvComponent,
+    ListeComponent,
+    ItemComponent,
+    DetailComponent,
+    StyleComponent,
+    ClassComponent,
+    HighlightDirective,
+    RainbowDirective,
+    DefaultImagePipe
   ],
     imports: [
         BrowserModule,

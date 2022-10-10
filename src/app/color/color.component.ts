@@ -12,4 +12,8 @@ export class ColorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  proceRequest(message:any){
+    alert(" you recived a message: "+ message)
+
+  }
 }

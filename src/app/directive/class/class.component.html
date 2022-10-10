@@ -1,0 +1,30 @@
+<ol class="list-group">
+  <li *ngFor="let team of teams; let ind=index" class="list-group-item">
+    -{{ind+1}} {{team}}
+  </li>
+</ol>
+
+
+
+
+
+<p [ngClass]="{
+'est':est,
+'barca':barca,
+'milan':milan
+ }"> class works! </p>
+<button class="btn btn-primary" (click)="changeTeam('est')">Esperance</button>
+<br>
+<br>
+<button class="btn btn-primary" (click)="changeTeam('milan')">milan</button>
+<br>
+<br>
+<button class="btn btn-primary" (click)="changeTeam('barca')">barca</button>
+<div appHighlight>
+  Bonjour je teste mon directive
+</div>
+<div>
+  <input   *ngIf="show" type="text" class="form-control" appRainbow>
+  <button class="btn btn-success" (click)= "show= !show "> showMe </button>
+
+</div>

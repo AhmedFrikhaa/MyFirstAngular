@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-child-a',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child-a.component.css']
 })
 export class ChildAComponent implements OnInit {
-
+  @Input() childProperty:any;
+  @Output() sendRequestToData= new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
+  console.log(this.childProperty);
+  }
+  sendEvent(){
+    this.sendRequestToData.emit('data to parent ')
   }
 
 }
